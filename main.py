@@ -38,7 +38,7 @@ def get_top_characters(api_data: str) -> List[str]:
         return (-power, name, element)
 
     pro_results = sorted(daftar_char, key=char_criteria)
-    results = [f"{char["name"]} ({char["element"]}) - {char["power"]}" for char in pro_results]
+    results = [f"{char['name']} ({char['element']}) - {char['power']}" for char in pro_results]
     return results
 
 # --- EKSEKUSI ---
